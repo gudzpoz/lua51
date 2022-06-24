@@ -180,7 +180,7 @@
 */
 #if defined(luaall_c)
 #define LUAI_FUNC	static
-#define LUAI_DATA	/* empty */
+#define LUAI_DATA	extern
 
 #elif defined(__GNUC__) && ((__GNUC__*100 + __GNUC_MINOR__) >= 302) && \
       defined(__ELF__)
